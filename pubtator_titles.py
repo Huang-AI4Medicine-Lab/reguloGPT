@@ -23,10 +23,8 @@ def write_to_csv(titles_and_ids, csv_file_path):
             writer.writerow([idx, title])
 
 
-# Replace 'your_file.txt' with the path to your text file
 file_path = 'filtered_pubtator_responses_V5.txt'
 
-# Specify the path for the new CSV file
 csv_file_path = 'V5_title.csv'
 
 titles_and_ids = extract_titles_and_ids(file_path)
