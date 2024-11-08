@@ -3,6 +3,10 @@
 Molecular Regulatory Pathways (MRPs) are key to understanding biological functions. Knowledge Graphs (KGs) help organize and analyze MRPs by structuring complex interactions. Current methods for extracting KGs from biomedical literature struggle with hierarchical relationships and context. Large Language Models (LLMs) like GPT-4 show promise in addressing these issues but remain underexplored for end-to-end KG construction. We present reguloGPT, a novel GPT-4 based in-context learning prompt designed for the end-to-end extraction of a regulatory graph and context from a sentence that describes regulatory interactions. reguloGPT employs a context-aware relational graph to capture MRPs’ hierarchical structure and resolves semantic inconsistencies by embedding context directly within the relational edges. We created a benchmark dataset comprising four hundred annotated PubMed titles on N6-methyladenosine (m6A) regulations. Rigorous evaluations of reguloGPT on the benchmark dataset showed marked improvements over existing algorithms and other LLMs. We further developed a novel G-Eval scheme, leveraging GPT-4 for annotation-free performance evaluation that demonstrated agreement with evaluations on the benchmark dataset. Lastly, we constructed m6A-KG by applying reguloGPT to 1,396 m6Arelated
 titles and demonstrated its utility in elucidating m6A’s regulatory mechanisms of cancer phenotypes across various cancers. These results underscore reguloGPT’s potential for advancing biological knowledge extraction.
 
+> Publication
+[Wu, Xidong, Sumin Jo, Yiming Zeng, Arun Das, Tinghe Zhang, Parth Patel, Yuanjing Wei, et al. ‘reguloGPT: Harnessing GPT for End-to-End Knowledge Graph Construction of Molecular Regulatory Pathways’. In IEEE-EMBS International Conference on Biomedical and Health Informatics, 2024.](https://openreview.net/pdf?id=iatBhDF6Tu)
+>
+
 
 ## Overall Process
 ![reguloGPT_process](./figures/process_figure_v7.png)
