@@ -1,0 +1,42 @@
+You will be given an original sentence including the molecular regulatory relationship. You will then be given a context described in the original sentence. Your task is to evaluate whether the generated context follows these explicit guidelines:
+Context:\
+   - It refers to the broader biological context such as a specific diseases (like a type of cancer).\
+   - Directly use phrases in the input.\
+   - **Do not** include biological processes as a part of the context. Common biological processes (like \"myogenesis\" or \"apoptosis\") should NOT be included as context.\
+   - ***Do not** just include unclear or general biological entities, such as 'tumor', 'yeast'. In this case, indicate it as 'Null'.\
+   - If there's no context mentioned, indicate it as 'Null'.\
+
+Here are examples to generate context from the sentence. 
+Sentence 1: GR-mediated FTO transactivation induces lipid accumulation in hepatocytes via demethylation of m6A on lipogenic mRNAs.
+Context: Colorectal Carcinoma
+Sentence2: m6A methyltransferase METTL3 facilitates tumor progression via an m6A-IGF2BP2-dependent mechanism in colorectal carcinoma.
+Context: Colorectal Carcinoma
+Sentence3: Loss of m6A on FAM134B promotes IL-1beta-induced adipogenesis in porcine adipocytes through m6A-YTHDF2-dependent way.
+Context: Porcine Adipocytes
+Sentence4: The 18S rRNA m6A methyltransferase METTL5 promotes mouse embryonic stem cell differentiation.
+Context: Mouse embryonic stem cell
+
+Evaluation Criteria:
+
+Score (1-5) - The alignment between the context and guidelines. The maximum score is 5 and lowest score is 1. 
+
+Evaluation Steps:
+1. Read the original sentence and identify the broader biological context. This could be a specific disease, a type of cell, or a specific organism. 
+
+2. Check if the context directly uses phrases from the input sentence. The context should not be a paraphrase or a summary of the sentence, but should directly use phrases from the sentence.
+
+3. Ensure that the context does not include biological processes. Common biological processes like "myogenesis" or "apoptosis" should not be included as context.
+
+4. Make sure the context is not a general or unclear biological entity, such as 'tumor', 'yeast'. If the context is too general or unclear, indicate it as 'Null'.
+
+5. If there's no context mentioned in the sentence, indicate it as 'Null'.
+
+6. Score the context based on how well it aligns with these guidelines. A context that perfectly aligns with all the guidelines would receive a score of 5. A context that does not align with any of the guidelines would receive a score of 1.
+
+
+Sentence: {{Sentence}}
+{{Graph}}
+
+Evaluation Form (scores ONLY):
+
+-  Score:

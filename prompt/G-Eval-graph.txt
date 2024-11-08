@@ -1,0 +1,43 @@
+You will be given an original sentence including the molecular regulatory relationship. You will then be given a graph that includes connected triplets (head node, edge, tail node) to represent the molecular regulatory relationship described in the original sentence. Your task is to evaluate whether the generated graph follows these explicit guidelines:
+1. Nodes:
+   - **Only** represent biological molecules, entities such as pathways or biological processes, as nodes. Denote a node as a single biology entity.
+   - **Do Not** include context in the node unless the context is a complete node. For example, use only differentiation in 'mouse embryonic stem cell differentiation' as the node since the 'mouse embryonic stem cell' is the context. But node must be a noun biological molecules or entities.
+   - Regard phrases like the A/B/C or (A-B-C) “axis”, “pathway”, and “signaling” as a node. If there is no word such as “axis”, “pathway”, or “signaling” in the phrase, divide entities in A-B-C into separate nodes.  
+   - **Do Not** have any action nouns as a node, including upregulation, resistance, exposure, resilience, regulation, suppression, or targeting, because they are not biological entities.
+   - **Do Not** combine multiple parallel biological entities connected with ‘and’ as a node. Extract each entity as a separate node.
+   - Introduce a “dummy” node if no entity is defined for a regulation in the sentence.
+2. Edges:
+   - Use an edge to represent the regulatory relationship between a head and a tail node described by the action nouns or verbs.
+   - The edge value should be a single-word predicate (or a concise description) that describes the direct relationship between the head and tail nodes.
+   - Use the word from the original sentence as the edge value as much as possible. If not possible, use generic word such as regulate, up-regulate, or down-regulate.
+   - 'is on' can be used as a relationship in the edge. **Do Not** use other prepositions, such as 'of', or 'in' as a relationship.
+   - **Do Not** include more than two nodes in an edge. If multiple nodes point to one node or one node points to multiple nodes, split them into multiple edges. 
+
+Here are examples to generate graph from the sentence. 
+Sentence 1: GR-mediated FTO transactivation induces lipid accumulation in hepatocytes via demethylation of m6A on lipogenic mRNAs.
+Graph: (GR, mediate, FTO transactivation), (FTO transactivation, induce, lipid accumulation), (FTO transactivation, demethylate, m6A), (m6A, is on, lipogenic mRNAs), (lipogenic mRNAs, regulate, lipid accumulation). 
+Sentence2: m6A methyltransferase METTL3 facilitates tumor progression via an m6A-IGF2BP2-dependent mechanism in colorectal carcinoma.
+Graph: (METTL3, facilitate, tumor progression), (METTL3, regulate, m6A), (IGF2BP2, bind, m6A), (m6A, facilitate, Tumor Progression)
+Sentence3: Loss of m6A on FAM134B promotes IL-1beta-induced adipogenesis in porcine adipocytes through m6A-YTHDF2-dependent way.
+Graph: (dummy, induce loss of, m6A), (m6A, is on, FAM134B), (FAM134B, promote, adipogenesis), (IL-1beta, induce, adipogenesis), (YTHDF2, bind, m6a)
+Sentence4: The 18S rRNA m6A methyltransferase METTL5 promotes mouse embryonic stem cell differentiation.
+Graph: (METTL5, promote, differentiation)
+
+Evaluation Criteria:
+
+Score (1-5) - The alignment between the triplets (head node, edge, tail node) in the generated graph and guidelines. The maximum score is 5 and lowest score is 1. 
+
+Evaluation Steps:
+1. Check the nodes in the graph. If all nodes represent biological molecules or entities, and no action nouns or context are included in the nodes, then proceed to the next step. If not, deduct points based on the number and severity of the errors.
+2. Check the edges in the graph. If all edges represent the regulatory relationship between a head and a tail node, then proceed to the next step. If not, deduct points based on the number and severity of the errors.
+3. Check if the graph correctly represents all molecular regulatory relationships described in the original sentence. If it does, then proceed to the next step. If not, deduct points based on the number and severity of the errors.
+4. Check if the graph follows the explicit guidelines. If it does, then the graph receives a score of 5. If not, deduct points based on the number and severity of the errors.
+5. If the graph has multiple errors in nodes, edges, representation of the molecular regulatory relationship, or adherence to the guidelines, then the graph receives a score of 1.
+
+Sentence: {{Sentence}}
+Graph: {{Graph}}
+
+Evaluation Form (scores ONLY):
+
+-  Score:
+

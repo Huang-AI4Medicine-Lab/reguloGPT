@@ -1,0 +1,20 @@
+Idx,Title,Node_A,edge,edge_normalized,Node_B
+24,METTL3-mediated m6A modification of KIF3C-mRNA promotes prostate cancer progression and is negatively regulated by miR-320d.,cancer,is,N/A,modification
+45,m6A deposition is regulated by PRMT1-mediated arginine methylation of METTL14 in its disordered C-terminal region.,m6A,is,N/A,mRNA
+58,FTO-dependent demethylation of N6-methyladenosine regulates mRNA splicing and is required for adipogenesis.,mRNA,is,N/A,4 mRNA is
+89,METTL3-mediated m6A modification of ZBTB4 mRNA is involved in the smoking-induced EMT in cancer of the lung.,mRNA,is,N/A,METTL14
+94,EBV epitranscriptome reprogramming by METTL14 is critical for viral-associated tumorigenesis.,EBV,is,N/A,Zc3h13/Flacc
+109,Zc3h13/Flacc is required for adenosine methylation by bridging the mRNA-binding factor Rbm15/Spenito to the m6A machinery component Wtap/Fl(2)d.,Flacc,is,N/A,inducer
+136,RNA secondary structure dependence in METTL3-METTL14 mRNA methylation is modulated by the N-terminal domain of METTL3.,mRNA,is,N/A,methylation
+156,Simvastatin is beneficial to lung cancer progression by inducing METTL3-induced m6A modification on EZH2 mRNA.,Simvastatin,is,N/A,lung
+175,METTL3-mediated M6A methylation modification is involved in colistin-induced nephrotoxicity through apoptosis mediated by Keap1/Nrf2 signaling pathway.,M6A,is,N/A,modification
+288,METTL3-mediated m6A modification is required for cerebellar development.,m6A,is,N/A,Cyclin
+295,METTL3-mediated N6-methyladenosine modification is critical for epithelial-mesenchymal transition and metastasis of gastric cancer.,N6-methyladenosine,is,N/A,METTL3
+312,The rRNA m6A methyltransferase METTL5 is involved in pluripotency and developmental programs.,rRNA,is,N/A,modification
+313,The 18S ribosomal RNA m6A methyltransferase Mettl5 is required for normal walking behavior in Drosophila.,m6A,is,N/A,modification
+358,METTL3-mediated m6A is required for murine oocyte maturation and maternal-to-zygotic transition.,m6A,is,N/A,methylation
+373,The RNA m6A reader YTHDF2 maintains oncogene expression and is a targetable dependency in glioblastoma stem cells.,oncogene,is,N/A,METTL5
+375,The human 18S rRNA m6A methyltransferase METTL5 is stabilized by TRMT112.,18S,is,N/A,Mettl5
+423,"Kar4, the yeast homolog of METTL14, is required for mRNA m6A methylation and meiosis",Kar4,is,N/A,behavior
+32,METTL3 Promotes the Resistance of Glioma to Temozolomide via Increasing MGMT and ANPG in a m6A Dependent Manner.,METTL3,Increasing,N/A,mass
+376,YTHDF1-enhanced iron metabolism depends on TFRC m6A methylation.,iron,depends,N/A,METTL5

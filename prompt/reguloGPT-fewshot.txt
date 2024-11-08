@@ -1,0 +1,57 @@
+Construct a graph including connected triplets (head node, edge, tail node) to represent the molecular regulatory relationship described in the provided sentence. Follow these explicit guidelines:\
+1. Nodes:\
+   - **Only** represent biological molecules, entities such as pathways or biological processes, as nodes. Denote a node as a single biology entity.\
+   - **Do Not** include context in the node unless the context is a complete node. For example, use only differentiation in 'mouse embryonic stem cell differentiation' as the node since the 'mouse embryonic stem cell' is the context. But node must be a noun biological molecules or entities.\
+   - Regard phrases like the A/B/C or (A-B-C) “axis”, “pathway”, and “signaling” as a node. If there is no word such as “axis”, “pathway”, or “signaling” in the phrase, divide entities in A-B-C into separate nodes.  \
+   - **Do Not** have any action nouns as a node, including upregulation, resistance, exposure, resilience, regulation, suppression, or targeting, because they are not biological entities.\
+   - **Do Not** combine multiple parallel biological entities connected with ‘and’ as a node. Extract each entity as a separate node.\
+   - Introduce a “dummy” node if no entity is defined for a regulation in the sentence.\
+2. Edges:\
+   - Use an edge to represent the regulatory relationship between a head and a tail node described by the action nouns or verbs.\
+   - The edge value should be a single-word predicate (or a concise description) that describes the direct relationship between the head and tail nodes.\
+   - Use the word from the original sentence as the edge value as much as possible. If not possible, use generic word such as regulate, up-regulate, or down-regulate.\
+   - 'is on' can be used as a relationship in the edge. **Do Not** use other prepositions, such as 'of', or 'in' as a relationship.\
+   - **Do Not** include more than two nodes in an edge. If multiple nodes point to one node or one node points to multiple nodes, split them into multiple edges. \
+3. Context:\
+   - It refers to the broader biological context such as a specific diseases (like a type of cancer).\
+   - Directly use phrases in the input.\
+   - **Do not** include biological processes as a part of the context. Common biological processes (like \"myogenesis\" or \"apoptosis\") should NOT be included as context but rather represented within the graph.\
+   - ***Do not** just include unclear or general biological entities, such as 'tumor', 'yeast'. In this case, indicate it as 'Null'.\
+   - If there's no context mentioned, indicate it as 'Null'.\
+4. Inferred Edges:\
+   - Include any relationships that can be logically derived but aren't directly stated in the provided sentence.\
+   - **Only** include inferred edge to make the graph complete. Do not introduce extra relationships. \
+For each sentence, format your answer as:\
+- Context => [Context or 'Null']\
+- Graph:\
+  - nodes=> [List of nodes]\
+  - Direct edges=> [List of direct edges with descriptions]\
+  - Inferred edges=> [List of inferred edges with descriptions]\
+Sentence 1: GR-mediated FTO transactivation induces lipid accumulation in hepatocytes via demethylation of m6A on lipogenic mRNAs. \
+Answer:\
+Context => Hepatocytes\
+Graph:\
+- nodes=> Node 1: GR, Node 2: FTO transactivation, Node 3: Lipid Accumulation, Node 4: m6A, Node 5: lipogenic mRNAs.\
+- Direct edges=> Edge 1: From Node 1 to Node 2; edge value: mediate. It represents that GR mediates FTO transactivation. Edge 2: From Node 2 to Node 3; edge value: induce. It represents that FTO transactivation induces lipid accumulation. Edge 3: From Node 2 to Node 4; edge value: demethylate. It represents that FTO demethylates m6A. Edge 4: From Node 4 to Node 5; edge value: is on. It represents that m6A is on lipogenic mRNAs. \
+- Inferred edges=> Edge 5: From Node 5 to Node 3; edge value: regulate. It implies that demethylation of m6A on lipogenic mRNAs regulates lipid accumulation.\
+Sentence2: m6A methyltransferase METTL3 facilitates tumor progression via an m6A-IGF2BP2-dependent mechanism in colorectal carcinoma.\
+Answer:\
+Context => Colorectal Carcinoma\
+Graph:\
+- nodes=> Node 1: METTL3, Node 2: Tumor Progression, Node 3: m6A, Node 4: IGF2BP2.\
+- Direct edges=> Edge 1: From Node 1 to Node 2; edge value: facilitate. It represents that METTL3 facilitates tumor progression. Edge 2: From Node 1 to Node 3; edge value: regulate. It represents that METTL3 regulates m6A. Edge 3: From Node 4 to Node 3; edge value: bind. It represents that IGF2BP2 binds m6A. \
+- Inferred edges=> Edge 4: From Node 3 to Node 2; edge value: facilitate. It implies that m6A facilitate Tumor Progression.\
+Sentence3: Loss of m6A on FAM134B promotes IL-1beta-induced adipogenesis in porcine adipocytes through m6A-YTHDF2-dependent way.\
+Answer:\
+Context => Porcine Adipocytes\
+Graph:\
+- nodes=> Node 1: dummy, Node 2: m6A, Node 3: FAM134B, Node 4: IL-1beta, Node 5: adipogenesis, Node 6: YTHDF2.\
+- Direct edges=> Edge 1: From Node 1 to Node 2; edge value: induce loss of. It represents the loss of m6A. Edge 2: From Node 2 to Node 3; edge value: is on. It represents m6A is on FAM134B. Edge 3: From Node 3 to Node 5; edge value: promote. It represents that FAM134B promotes adipogenesis. Edge 4: From Node 4 to Node 5; edge value: induce. It represents that IL-1beta induces adipogenesis. Edge 5: From Node 6 to Node 2; edge value: bind. It represents that m6a reader YTHDF2 binds m6a.  \
+- Inferred edges=> Null.\
+Sentence4: The 18S rRNA m6A methyltransferase METTL5 promotes mouse embryonic stem cell differentiation.\
+Answer:\
+Context => Mouse embryonic stem cell\
+Graph:\
+- nodes=> Node 1: METTL5, Node 2: differentiation.\
+- Direct edges=> Edge 1:  From Node 1 to Node 2; edge value: promote. It represents that METTL5 promotes mouse embryonic stem cell differentiation. \
+- Inferred edges=> Null.\

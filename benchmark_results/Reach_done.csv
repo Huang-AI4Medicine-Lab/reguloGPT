@@ -1,0 +1,55 @@
+Idx,Title,node-A,edge,edge_normalized,node-B
+2,METTL14 Overexpression Promotes Osteosarcoma Cell Apoptosis and Slows Tumor Progression via Caspase 3 Activation.,METTL14,Promotes,STIMULATES,Apoptosis
+3,Downregulation of m6A Reader YTHDC2 Promotes the Proliferation and Migration of Malignant Lung Cells via CYLD/NF-kappaB Pathway.,YTHDC2,Promotes,STIMULATES,Proliferation
+4,m6A Methyltransferase METTL14-Mediated Upregulation of Cytidine Deaminase Promoting Gemcitabine Resistance in Pancreatic Cancer.,Cytidine Deaminase,Promoting,STIMULATES,Gemcitabine
+4,m6A Methyltransferase METTL14-Mediated Upregulation of Cytidine Deaminase Promoting Gemcitabine Resistance in Pancreatic Cancer.,Gemcitabine,Promoting,STIMULATES,Cytidine Deaminase
+4,m6A Methyltransferase METTL14-Mediated Upregulation of Cytidine Deaminase Promoting Gemcitabine Resistance in Pancreatic Cancer.,METTL14,Mediated,AFFECTS,Gemcitabine
+4,m6A Methyltransferase METTL14-Mediated Upregulation of Cytidine Deaminase Promoting Gemcitabine Resistance in Pancreatic Cancer.,METTL14,Mediated,AFFECTS,Cytidine Deaminase
+16,Hsa-let-7b-5p Inhibits Proliferation of Human Leukemia THP-1 Cells via FTO/m6A/MYC Signaling Pathway.,Hsa-let-7b-5p,Inhibits,INHIBITS,Proliferation
+18,METTL3 Promotes Esophageal Squamous Cell Carcinoma Metastasis Through Enhancing GLS2 Expression.,METTL3,Promotes,STIMULATES,GLS2 Expression
+30,Reduced Expression of METTL3 Promotes Metastasis of Triple-Negative Breast Cancer by m6A Methylation-Mediated COL3A1 Up-Regulation.,METTL3,Promotes,STIMULATES,Metastasis
+31,METTL14 Inhibits Hepatocellular Carcinoma Metastasis Through Regulating EGFR/PI3K/AKT Signaling Pathway in an m6A-Dependent Manner.,METTL14,Inhibits,INHIBITS,Metastasis
+32,METTL3 Promotes the Resistance of Glioma to Temozolomide via Increasing MGMT and ANPG in a m6A Dependent Manner.,METTL3,Promotes,STIMULATES,Temozolomide
+37,ALKBH5 Inhibited Cell Proliferation and Sensitized Bladder Cancer Cells to Cisplatin by m6A-CK2alpha-Mediated Glycolysis.,ALKBH5,Inhibited,INHIBITS,Cell Proliferation
+46,METTL3-Mediated lncRNA m6A Modification in the Osteogenic Differentiation of Human Adipose-Derived Stem Cells Induced by NEL-Like 1 Protein.,METTL3,Mediated,AFFECTS,Differentiation
+72,METTL14 Suppresses CRC Progression via Regulating N6-Methyladenosine-Dependent Primary miR-375 Processing.,METTL14,Suppresses,INHIBITS,CRC
+73,The m6A Methyltransferase METTL14-Mediated N6-Methyladenosine Modification of PTEN mRNA Inhibits Tumor Growth and Metastasis in Stomach Adenocarcinoma.,METTL14,Mediated,AFFECTS,N6-Methyladenosine
+73,The m6A Methyltransferase METTL14-Mediated N6-Methyladenosine Modification of PTEN mRNA Inhibits Tumor Growth and Metastasis in Stomach Adenocarcinoma.,N6-Methyladenosine,Inhibits,INHIBITS,Metastasis
+95,N6-methyladenosine Demethylase FTO Induces the Dysfunctions of Ovarian Granulosa Cells by Upregulating Flotillin 2.,Demethylase FTO,Induces,CAUSES,Flotillin 2
+121,m6A Reader YTHDF2 Regulates LPS-Induced Inflammatory Response.,LPS,Induced,CAUSES,Inflammatory Response
+131,NSUN2-Mediated m5C Methylation and METTL3/METTL14-Mediated m6A Methylation Cooperatively Enhance p21 Translation.,NSUN2,Mediated,AFFECTS,Methylation and METTL3
+131,NSUN2-Mediated m5C Methylation and METTL3/METTL14-Mediated m6A Methylation Cooperatively Enhance p21 Translation.,NSUN2,Mediated,AFFECTS,Methylation and METTL3/METTL14
+131,NSUN2-Mediated m5C Methylation and METTL3/METTL14-Mediated m6A Methylation Cooperatively Enhance p21 Translation.,METTL3,Enhance,AUGMENTS,Translation
+131,NSUN2-Mediated m5C Methylation and METTL3/METTL14-Mediated m6A Methylation Cooperatively Enhance p21 Translation.,METTL14,Enhance,AUGMENTS,p21
+131,NSUN2-Mediated m5C Methylation and METTL3/METTL14-Mediated m6A Methylation Cooperatively Enhance p21 Translation.,METTL14,Enhance,AUGMENTS,Translation
+131,NSUN2-Mediated m5C Methylation and METTL3/METTL14-Mediated m6A Methylation Cooperatively Enhance p21 Translation.,METTL3,Enhance,AUGMENTS,p21
+146,METTL3 Promotes Tumorigenesis and Metastasis through BMI1 m6A Methylation in Oral Squamous Cell Carcinoma.,METTL3,Promotes,STIMULATES,Metastasis
+166,YTHDF3 Induces the Translation of m6A-Enriched Gene Transcripts to Promote Breast Cancer Brain Metastasis.,YTHDF3,Promote,STIMULATES,Metastasis
+166,YTHDF3 Induces the Translation of m6A-Enriched Gene Transcripts to Promote Breast Cancer Brain Metastasis.,YTHDF3,Induces,CAUSES,Translation
+166,YTHDF3 Induces the Translation of m6A-Enriched Gene Transcripts to Promote Breast Cancer Brain Metastasis.,YTHDF3,Induces,CAUSES,Metastasis
+173,N6-Methyladenosine RNA Demethylase FTO Promotes Gastric Cancer Metastasis by Down-Regulating the m6A Methylation of ITGB1.,Demethylase FTO,Promotes,STIMULATES,Methylation of ITGB1
+186,YTHDF1 Promotes Cyclin B1 Translation through m6A Modulation and Contributes to the Poor Prognosis of Lung Adenocarcinoma with KRAS/TP53 Co-Mutation.,YTHDF1,Promotes,STIMULATES,Translation
+186,YTHDF1 Promotes Cyclin B1 Translation through m6A Modulation and Contributes to the Poor Prognosis of Lung Adenocarcinoma with KRAS/TP53 Co-Mutation.,YTHDF1,Promotes,STIMULATES,B1
+186,YTHDF1 Promotes Cyclin B1 Translation through m6A Modulation and Contributes to the Poor Prognosis of Lung Adenocarcinoma with KRAS/TP53 Co-Mutation.,YTHDF1,Promotes,STIMULATES,Cyclin
+228,RBM15 Modulates the Function of Chromatin Remodeling Factor BAF155 Through RNA Methylation in Developing Cortex.,RBM15,Modulates,AFFECTS,Chromatin Remodeling
+228,RBM15 Modulates the Function of Chromatin Remodeling Factor BAF155 Through RNA Methylation in Developing Cortex.,RBM15,Modulates,AFFECTS,BAF155
+240,METTL3-Induced miR-222-3p Upregulation Inhibits STK4 and Promotes the Malignant Behaviors of Thyroid Carcinoma Cells.,METTL3,Inhibits,INHIBITS,STK4
+243,Tumor-Associated Macrophages Promote Oxaliplatin Resistance via METTL3-Mediated m6A of TRAF5 and Necroptosis in Colorectal Cancer.,Oxaliplatin,Mediated,AFFECTS,Necroptosis
+243,Tumor-Associated Macrophages Promote Oxaliplatin Resistance via METTL3-Mediated m6A of TRAF5 and Necroptosis in Colorectal Cancer.,Oxaliplatin,Mediated,AFFECTS,TRAF5
+261,YTHDF2 Inhibits Gastric Cancer Cell Growth by Regulating FOXC2 Signaling Pathway.,YTHDF2,Inhibits,INHIBITS,FOXC2
+261,YTHDF2 Inhibits Gastric Cancer Cell Growth by Regulating FOXC2 Signaling Pathway.,YTHDF2,Inhibits,INHIBITS,Cell Growth
+268,METTL3/m6A/miRNA-873-5p Attenuated Oxidative Stress and Apoptosis in Colistin-Induced Kidney Injury by Modulating Keap1/Nrf2 Pathway.,METTL3/m6A/miRNA-873-5p,Induced,CAUSES,Keap1
+268,METTL3/m6A/miRNA-873-5p Attenuated Oxidative Stress and Apoptosis in Colistin-Induced Kidney Injury by Modulating Keap1/Nrf2 Pathway.,METTL3/m6A/miRNA-873-5p,Induced,CAUSES,Nrf2
+268,METTL3/m6A/miRNA-873-5p Attenuated Oxidative Stress and Apoptosis in Colistin-Induced Kidney Injury by Modulating Keap1/Nrf2 Pathway.,METTL3/m6A/miRNA-873-5p,Induced,CAUSES,Injury
+268,METTL3/m6A/miRNA-873-5p Attenuated Oxidative Stress and Apoptosis in Colistin-Induced Kidney Injury by Modulating Keap1/Nrf2 Pathway.,METTL3/m6A/miRNA-873-5p,Attenuated,INHIBITS,Apoptosis
+275,METTL14 Inhibits Hematopoietic Stem/Progenitor Differentiation and Promotes Leukemogenesis via mRNA m6A Modification.,METTL14,Inhibits,INHIBITS,Differentiation
+281,High expression of WTAP leads to poor prognosis of gastric cancer by influencing tumour-associated T lymphocyte infiltration.,WTAP,leads,CAUSES,infiltration
+314,Ribosome 18S m6A Methyltransferase METTL5 Promotes Translation Initiation and Breast Cancer Cell Growth.,METTL5,Promotes,STIMULATES,Translation
+326,The m6A RNA Demethylase ALKBH5 Promotes Radioresistance and Invasion Capability of Glioma Stem Cells.,RNA Demethylase ALKBH5,Promotes,STIMULATES,Radioresistance
+326,The m6A RNA Demethylase ALKBH5 Promotes Radioresistance and Invasion Capability of Glioma Stem Cells.,RNA Demethylase ALKBH5,Promotes,STIMULATES,Invasion
+362,Deficiency of Mettl3 in Bladder Cancer Stem Cells Inhibits Bladder Cancer Progression and Angiogenesis.,Mettl3,Inhibits,INHIBITS,Angiogenesis
+363,Corrigendum: Deficiency of Mettl3 in Bladder Cancer Stem Cells Inhibits Bladder Cancer Progression and Angiogenesis.,Mettl3,Inhibits,INHIBITS,Angiogenesis
+379,Loss of WTAP Impairs Early Parthenogenetic Embryo Development.,WTAP,Impairs,INHIBITS,Embryo Development
+419,Gemcitabine Inhibits the Progression of Pancreatic Cancer by Restraining the WTAP/MYC Chain in an m6A-dependent Manner.,Gemcitabine,Inhibits,INHIBITS,MYC
+419,Gemcitabine Inhibits the Progression of Pancreatic Cancer by Restraining the WTAP/MYC Chain in an m6A-dependent Manner.,Gemcitabine,Inhibits,INHIBITS,WTAP
+426,METTL3 Promotes the Growth and Invasion of Melanoma Cells by Regulating the lncRNA SNHG3/miR-330-5p Axis.,METTL3,Promotes,STIMULATES,Invasion
