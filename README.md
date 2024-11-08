@@ -4,10 +4,16 @@ Molecular Regulatory Pathways (MRPs) are key to understanding biological functio
 titles and demonstrated its utility in elucidating m6A’s regulatory mechanisms of cancer phenotypes across various cancers. These results underscore reguloGPT’s potential for advancing biological knowledge extraction.
 
 > Publication
-
-[Wu, Xidong, Sumin Jo, Yiming Zeng, Arun Das, Tinghe Zhang, Parth Patel, Yuanjing Wei, et al. ‘reguloGPT: Harnessing GPT for End-to-End Knowledge Graph Construction of Molecular Regulatory Pathways’. In IEEE-EMBS International Conference on Biomedical and Health Informatics, 2024.](https://openreview.net/pdf?id=iatBhDF6Tu)
-
 >
+>[Wu, Xidong, Sumin Jo, Yiming Zeng, Arun Das, Tinghe Zhang, Parth Patel, Yuanjing Wei, et al. ‘reguloGPT: Harnessing GPT for End-to-End Knowledge Graph Construction of Molecular Regulatory Pathways’. In IEEE-EMBS International Conference on Biomedical and Health Informatics, 2024.](https://openreview.net/pdf?id=iatBhDF6Tu)
+>
+>
+
+
+
+
+
+
 
 
 ## Overall Process
